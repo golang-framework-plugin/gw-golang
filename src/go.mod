@@ -47,5 +47,3 @@ require (
 	xorm.io/builder v0.3.9 // indirect
 	xorm.io/xorm v1.2.5 // indirect
 )
-
-replace github.com/golang-framework/mvc v0.0.0-20211130074511-999593b10ad8 => /Users/wyu/Documents/Projects/src/mvc
