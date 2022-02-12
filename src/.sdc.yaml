@@ -1,0 +1,4 @@
+RedisPrefixKey:
+  Gw: "fw_gw"
+  GwAdmin: "fw_gw_admin"
+

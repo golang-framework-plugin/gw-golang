@@ -1,0 +1,16 @@
+JwTTag:
+  GwSrv001: &gw_srv_001 UserLogin
+
+JwTSignature:
+  GwSrv001: &gw_srv_signature_001 o123*456o
+
+JWT:
+  *gw_srv_001:
+    SIG: *gw_srv_signature_001
+    TYP: "fw_typ_jwt_token"
+    ALG: "md5"
+    ISS: "fw_iss_users"
+    SUB: "fw_sub_users_login"
+    AUD: "fw_aud_users_gw"
+
+

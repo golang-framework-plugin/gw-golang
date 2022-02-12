@@ -1,0 +1,7 @@
+route:
+  Tag:
+    Gateway: &gateway golang_framework_gateway
+    GatewayAdministration: &gateway_administration golang_framework_gateway_administration
+  Rel:
+    *gateway: "gw"
+    *gateway_administration: "gw_admin"

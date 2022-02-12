@@ -1,0 +1,46 @@
+## golang mvc framework - v1.0.0 ##
+Common:
+  Name: "golang mvc framework"
+  Port: "8577"
+  TimeLocation: "Asia/Shanghai"
+  Addr: ""
+  Hssl:
+    Power: 0
+    CertFile: ""
+    KeysFile: ""
+
+db:
+  requirement:
+    - Driver: "mysql"
+      MaxOpen: 50
+      MaxIdle: 100
+      MaxLifeTime: 60
+      ShowedSQL: true
+      CachedSQL: false
+      Expire: 10
+      MaxElementSize: 1000
+      TimeLoaction: "Asia/Shanghai"
+  conns:
+    - Require: 0
+      Repo: "demo"
+      Host: "127.0.0.1"
+      Port: 3306
+      Username: "root"
+      Password: "root"
+    - Require: 0
+      Repo: "gwdb"
+      Host: "127.0.0.1"
+      Port: 3306
+      Username: "root"
+      Password: "root"
+
+redis:
+  - Network: "tcp"
+    Addr: "127.0.0.1:6379"
+    Username: "root"
+    Password: ""
+    DB: 0
+    PoolSize: 20
+
+
+
